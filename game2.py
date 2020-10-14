@@ -54,7 +54,7 @@ class CarRacing:
         self.count = 0
 
     def car(self, car_x_coordinate, car_y_coordinate):
-        self.gameDisplay.blit(self.carImg, (car_x_coordinate, car_y_coordinate))
+        self.gameDisplay.blit(self.carImg, (round(car_x_coordinate), round(car_y_coordinate)))
 
     def racing_window(self):
         self.gameDisplay = pygame.display.set_mode((self.display_width, self.display_height))
@@ -111,7 +111,7 @@ class CarRacing:
     def display_message(self, msg):
         font = pygame.font.SysFont("comicsansms", 72, True)
         text = font.render(msg, True, (255, 255, 255))
-        self.gameDisplay.blit(text, (400 - text.get_width() // 2, 240 - text.get_height() // 2))
+        self.gameDisplay.blit(text, (round(400 - text.get_width() // 2), round(240 - text.get_height() // 2)))
         self.display_credit()
         pygame.display.update()
         self.clock.tick(60)
@@ -120,8 +120,8 @@ class CarRacing:
         car_racing.racing_window()
 
     def back_ground_raod(self):
-        self.gameDisplay.blit(self.bgImg, (self.bg_x1, self.bg_y1))
-        self.gameDisplay.blit(self.bgImg, (self.bg_x2, self.bg_y2))
+        self.gameDisplay.blit(self.bgImg, (round(self.bg_x1), round(self.bg_y1)))
+        self.gameDisplay.blit(self.bgImg, (round(self.bg_x2), round(self.bg_y2)))
 
         self.bg_y1 += self.bg_speed
         self.bg_y2 += self.bg_speed
@@ -133,7 +133,7 @@ class CarRacing:
             self.bg_y2 = -600
 
     def run_enemy_car(self, thingx, thingy):
-        self.gameDisplay.blit(self.enemy_car, (thingx, thingy))
+        self.gameDisplay.blit(self.enemy_car, (round(thingx), round(thingy)))
 
     def highscore(self, count):
         font = pygame.font.SysFont("lucidaconsole", 18)
