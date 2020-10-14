@@ -31,8 +31,11 @@ class CarRacing:
         self.enemy_car1 = pygame.image.load('images/enemy_car_1.png')
         self.enemy_car2 = pygame.image.load('images/enemy_car_2.png')
         self.enemy_car3 = pygame.image.load('images/enemy_car_3.png')
+        self.enemy_car4 = pygame.image.load('images/enemy_car_4.png')
+        self.enemy_car5 = pygame.image.load('images/enemy_car_5.png')
+        self.enemy_car6 = pygame.image.load('images/enemy_car_6.png')
         #self.enemy_car3 = pygame.image.load('enemy_car_3.png')
-        self.imag=[self.enemy_car1,self.enemy_car2,self.enemy_car3]
+        self.imag=[self.enemy_car1,self.enemy_car2,self.enemy_car3,self.enemy_car4,self.enemy_car5,self.enemy_car6]
         self.enemy_car=random.choice(self.imag)
 #        self.enemy_car=random.choice(self.imag)
         self.enemy_car_startx = random.randrange(310, 450)
