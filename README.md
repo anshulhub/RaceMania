@@ -11,6 +11,7 @@ you want to go. Holding the key will not have an effect.
 ## Getting Game Over
 Colliding with the other cars in any way will result in a game over.
 
+
 *Hitting the car head on*
 ![images](readme_assets/gameover.png)
 
@@ -20,6 +21,7 @@ Colliding with the other cars in any way will result in a game over.
 
 ## Going Wrong Way
 Apart from hitting the other cars, you must also be careful not to drive off the road.
+
 
 *Driving into the bushes*
 ![images](readme_assets/outroad.png)
