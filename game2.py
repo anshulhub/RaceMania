@@ -119,7 +119,7 @@ class CarRacing:
         car_racing.initialize()
         car_racing.racing_window()
 
-    def back_ground_raod(self):
+    def back_ground_road(self):
         self.gameDisplay.blit(self.bgImg, (round(self.bg_x1), round(self.bg_y1)))
         self.gameDisplay.blit(self.bgImg, (round(self.bg_x2), round(self.bg_y2)))
 
